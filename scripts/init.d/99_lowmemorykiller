@@ -1,0 +1,16 @@
+#!/system/bin/sh
+# HD2 lowmemorykiller tweak 
+# E.g., 2048*4/1024 = 8 MB
+
+if [ -f /sys/module/lowmemorykiller/parameters/minfree ]; then
+
+  # size: 8M  12M  20M   60M   80M  100M
+  #echo "2048,3072,5120,15360,20480,25600" > /sys/module/lowmemorykiller/parameters/minfree
+
+  # size: 8M  12M  20M   50M   70M   90M
+  echo "2048,3072,5120,12800,17920,23040" > /sys/module/lowmemorykiller/parameters/minfree
+
+  # prevent change by system
+  chmod 0444 /sys/module/lowmemorykiller/parameters/minfree
+
+fi
