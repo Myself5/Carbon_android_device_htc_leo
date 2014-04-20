@@ -2,13 +2,13 @@
 TARGET_USE_KEYBOARD := international
 
 # Inherit common product files.
-$(call inherit-product, vendor/liquid/config/common.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/liquid/config/gsm.mk)
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 # Inherit some common evervolv stuff.
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+$(call inherit-product, vendor/carbon/config/common_full_phone.mk)
 
 # Inherit AOSP device configuration for leo.
 $(call inherit-product, device/htc/leo/device_leo.mk)
@@ -25,4 +25,4 @@ PRODUCT_NAME := liquid_leo
 
 # Copy bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
+    vendor/carbon/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
