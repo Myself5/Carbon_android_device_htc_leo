@@ -21,7 +21,7 @@ PRODUCT_MODEL := HTC HD2
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_BRAND := htc
 PRODUCT_DEVICE := leo
-PRODUCT_NAME := liquid_leo
+PRODUCT_NAME := carbon_leo
 
 # Copy bootanimation
 PRODUCT_COPY_FILES += \
