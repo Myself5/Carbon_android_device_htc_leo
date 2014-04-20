@@ -19,7 +19,6 @@
 # product configuration (apps).
 #
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/htc/leo/leo_languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Overlay
