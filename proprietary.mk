@@ -65,8 +65,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-  device/htc/leo/proprietary/lib/libgps.so:system/lib/libgps.so \
-  device/htc/leo/proprietary/lib/hw/gps.htcleo.so:system/lib/hw/gps.htcleo.so
+  device/htc/leo/proprietary/lib/libgps.so:system/lib/libgps.so
 
 # Media
 PRODUCT_COPY_FILES += \
