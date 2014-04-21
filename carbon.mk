@@ -7,6 +7,10 @@ $(call inherit-product, vendor/carbon/config/common_phone.mk)
 # Inherit AOSP device configuration for leo.
 $(call inherit-product, device/htc/leo/device_leo.mk)
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+
 #skip asserts for now
 TARGET_OTA_ASSERT_SKIP := true
 
@@ -16,7 +20,3 @@ PRODUCT_MANUFACTURER := HTC
 PRODUCT_BRAND := htc
 PRODUCT_DEVICE := leo
 PRODUCT_NAME := carbon_leo
-
-# Copy bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/carbon/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
