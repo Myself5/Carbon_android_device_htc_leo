@@ -164,7 +164,7 @@
   BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Fix set metadata on yaffs2 use old set permission
-  USE_SET_METADATA := false
+  SKIP_SET_METADATA := true
 
 # Recovery
   TARGET_RECOVERY_FSTAB = device/htc/leo/ramdisk/fstab.htcleo
